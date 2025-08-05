@@ -1,5 +1,7 @@
 site_name: PSimulator
 theme : readthedocs 
+extra_css:
+  - css/extra.css
 nav :
   - Acceuil : index.md
   - Hiérarchie : hierarchy.md
