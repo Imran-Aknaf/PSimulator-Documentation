@@ -63,6 +63,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Scritps</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../">Introduction</a>
+                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">PlacementManager</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
@@ -77,7 +79,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#variables-importantes">Variables importantes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#interactions">Interactions</a>
     </li>
@@ -90,6 +92,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Fonctionnalités</span></p>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../functionalities/">Introduction</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../functionalities/spawning/">Spawning</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../functionalities/selection/">Selection</a>
@@ -97,6 +101,7 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../functionalities/drag_and_drop/">Drag & Drop</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Guides</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../contribution/">Guide de Contribution</a>
                     </li>
@@ -157,17 +162,12 @@
     {
         if (IsValidPosition(newPos))
         {
-            selectedObject.transform.position = Vector3.Lerp(
-                selectedObject.transform.position,
-                newPos,
-                Time.deltaTime * dragSpeed
-            );
+            /*fait qlq chose*/
         }
     }
 
     private bool IsValidPosition(Vector3 pos)
     {
-        // TODO: vérifier collisions, limites, points autorisés
         return true;
     }
 }
@@ -175,31 +175,27 @@
 <h3 id="methode-selectobjectgameobject-obj">Méthode : SelectObject(GameObject obj)</h3>
 <ul>
 <li>Change la couleur de l’objet pour indiquer qu’il est sélectionné.</li>
-<li>
-<p>Stocke une référence à l’objet sélectionné.</p>
-</li>
-<li>
-<p><code>SelectObject(GameObject obj)</code> : sélectionne un objet et change sa couleur.  </p>
-</li>
+<li>Stocke une référence à l’objet sélectionné.
+OU </li>
+<li><code>SelectObject(GameObject obj)</code> : sélectionne un objet et change sa couleur.  </li>
 </ul>
 <h3 id="methode-dragobject">Méthode : DragObject</h3>
 <ul>
 <li><code>DragObject(GameObject obj, Vector3 newPos)</code> : déplace un objet sélectionné si la position est valide.</li>
 </ul>
-<h2 id="variables-importantes">Variables importantes</h2>
+<h2 id="variables">Variables</h2>
 <ul>
 <li><code>selectedObject</code> : objet actuellement sélectionné.  </li>
 <li><code>dragSpeed</code> : vitesse de déplacement lors du drag.</li>
 </ul>
 <h2 id="interactions">Interactions</h2>
 <p>Interacte avec les scripts :<br />
-- <a href="SpawnerController.md">SpawnerController</a> pour le spawn dynamique.<br />
-- <a href="UIManager.md">UIManager</a> pour les retours visuels.</p>
+- TODO (doit etre un hyperlink vers le script concerné ?)
+- TODO </p>
 <h2 id="todo">TODO</h2>
 <ul>
-<li>Implémenter IsValidPosition() selon la logique métier</li>
-<li>Ajouter un feedback visuel en cas de position invalide</li>
-<li>Intégrer avec le système de sauvegarde</li>
+<li>Implémenter IsValidPosition() </li>
+<li>ect...</li>
 </ul>
               
             </div>
@@ -211,7 +207,7 @@
         <a href="../WireManager/" class="btn btn-neutral float-right" title="WireManager">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../gameobjects/WireManager/" class="btn btn-neutral" title="WireManager"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -237,7 +233,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../gameobjects/WireManager/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../WireManager/" style="color: #fcfcfc">Next &raquo;</a></span>
