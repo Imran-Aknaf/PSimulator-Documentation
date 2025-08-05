@@ -1,5 +1,16 @@
 site_name: PSimulator
+theme : readthedocs 
 nav :
-  - Home : index.md
-  - About : about.md
-theme : readthedocs
+  - Acceuil : index.md
+  - Hiérarchie : hierarchy.md
+  - GameObjects : 
+    - PlacementManager : gameobjects/PlacementManager.md
+    - WireManager : gameobjects/WireManager.md
+  - Scritps : 
+    - PlacementManager : scripts/PlacementManager.md
+    - WireManager : scripts/WireManager.md
+  - Fonctionnalités :  
+    - Spawning: functionalities/spawning.md
+    - Selection: functionalities/selection.md
+    - Drag & Drop: functionalities/drag_and_drop.md
+  - Guide de Contribution : contribution.md 
