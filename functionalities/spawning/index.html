@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Spawning - PSimulator</title>
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Spawning";
+    var mkdocs_page_input_path = "functionalities/spawning.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PSimulator</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Acceuil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../hierarchy/">Hiérarchie</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">GameObjects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../gameobjects/PlacementManager/">PlacementManager</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../gameobjects/WireManager/">WireManager</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Scritps</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../scripts/PlacementManager/">PlacementManager</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../scripts/WireManager/">WireManager</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fonctionnalités</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Spawning</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#reglesconditions">Règles/Conditions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#liens">Liens</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection/">Selection</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../drag_and_drop/">Drag & Drop</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contribution/">Guide de Contribution</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PSimulator</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Fonctionnalités &raquo;</li>
+        
+      
+    
+    <li>Spawning</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="fonctionnalite-spawning">Fonctionnalité : Spawning</h1>
+<p>Cette fonctionnalité permet de faire apparaître des carrés bleus sur les dots valides du Quad.
+Le carré rouge est drag sur le Quad afin de faire spawn un carré bleu sur un des dots si les conditions sont valides</p>
+<h2 id="reglesconditions">Règles/Conditions</h2>
+<ul>
+<li>Le carré rouge doit être déplacé sur le Quad.  </li>
+<li>Un carré bleu ne peut apparaître que sur un dot valide.</li>
+</ul>
+<p>Pour plus d’infos sur la validation, voir la note <a href="#position-valide">Position valide</a>.</p>
+<h2 id="liens">Liens</h2>
+<ul>
+<li><a href="../../gameobjects/PlacementManager/">GameObject PlacementManager</a>  </li>
+<li><a href="../../scripts/PlacementManager/">Script PlacementManager</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../selection/" class="btn btn-neutral float-right" title="Selection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../scripts/WireManager/" class="btn btn-neutral" title="WireManager"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../scripts/WireManager/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../selection/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
