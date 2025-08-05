@@ -9,10 +9,13 @@ nav :
     - PlacementManager : gameobjects/PlacementManager.md
     - WireManager : gameobjects/WireManager.md
   - Scritps : 
+    - Introduction: scripts/index.md  
     - PlacementManager : scripts/PlacementManager.md
     - WireManager : scripts/WireManager.md
   - Fonctionnalités :  
+    - Introduction: functionalities/index.md
     - Spawning: functionalities/spawning.md
     - Selection: functionalities/selection.md
     - Drag & Drop: functionalities/drag_and_drop.md
-  - Guide de Contribution : contribution.md 
+  - Guides : 
+    - Guide de Contribution: contribution.md 

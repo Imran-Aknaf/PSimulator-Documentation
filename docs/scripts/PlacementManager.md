@@ -24,17 +24,12 @@ public class PlacementManager : MonoBehaviour
     {
         if (IsValidPosition(newPos))
         {
-            selectedObject.transform.position = Vector3.Lerp(
-                selectedObject.transform.position,
-                newPos,
-                Time.deltaTime * dragSpeed
-            );
+            /*fait qlq chose*/
         }
     }
 
     private bool IsValidPosition(Vector3 pos)
     {
-        // TODO: vérifier collisions, limites, points autorisés
         return true;
     }
 }
@@ -43,13 +38,13 @@ public class PlacementManager : MonoBehaviour
 ### Méthode : SelectObject(GameObject obj)
 - Change la couleur de l’objet pour indiquer qu’il est sélectionné.
 - Stocke une référence à l’objet sélectionné.
-
+OU 
 - `SelectObject(GameObject obj)` : sélectionne un objet et change sa couleur.  
 
 ### Méthode : DragObject        
 - `DragObject(GameObject obj, Vector3 newPos)` : déplace un objet sélectionné si la position est valide.
 
-## Variables importantes
+## Variables 
 
 - `selectedObject` : objet actuellement sélectionné.  
 - `dragSpeed` : vitesse de déplacement lors du drag.
@@ -57,10 +52,9 @@ public class PlacementManager : MonoBehaviour
 ## Interactions
 
 Interacte avec les scripts :  
-- [SpawnerController](SpawnerController.md) pour le spawn dynamique.  
-- [UIManager](UIManager.md) pour les retours visuels.
+- TODO (doit etre un hyperlink vers le script concerné ?)
+- TODO 
 
 ## TODO
-- Implémenter IsValidPosition() selon la logique métier
-- Ajouter un feedback visuel en cas de position invalide
-- Intégrer avec le système de sauvegarde
+- Implémenter IsValidPosition() 
+- ect...

@@ -5,12 +5,13 @@ Le carré rouge est drag sur le Quad afin de faire spawn un carré bleu sur un d
 
 ## Règles/Conditions
 
-- Le carré rouge doit être déplacé sur le Quad.  
-- Un carré bleu ne peut apparaître que sur un dot valide.
+- TODO
 
-Pour plus d’infos sur la validation, voir la note [Position valide](#position-valide).
+Exemple qu'on pourrait faire : 
+"Pour plus d’infos sur la validation, voir la note [Position valide](#position-valide)."
 
 ## Liens
+Note pour nous : je pense qu'on devrais juste référence les gameObjects concerné , pas les scritps. (Les gameObjects eux référence derrière les scripts concernés)
 
 - [GameObject PlacementManager](../gameobjects/PlacementManager.md)  
 - [Script PlacementManager](../scripts/PlacementManager.md)

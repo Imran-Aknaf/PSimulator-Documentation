@@ -10,6 +10,6 @@ TODO
 - [WireManager](../scripts/WireManager.md) : génération de wire (TODO)
 ## Fonctionnalités
 
-- Participe à la sélection d’objets (voir [selection](../functionalities/selection.md))  
-- Supporte le Drag&Drop (voir [drag_and_drop](../functionalities/drag_and_drop.md))
-- Responsable du spawning des composants sur le grid (voir [spawning](../functionalities/spawning.md))
+- [Selection](../functionalities/selection.md) : Participe à la sélection d’objets 
+- [Drag&Drop](../functionalities/drag_and_drop.md) : Supporte le Drag&Drop 
+- [Spawning](../functionalities/spawning.md) : Responsable du spawning des composants sur le grid 
